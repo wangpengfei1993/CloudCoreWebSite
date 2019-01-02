@@ -2,17 +2,18 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--<meta http-equiv="refresh" content="6">-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="北京云核网络技术有限公司（简称：云核网络CloudCore）成立于2013年，是一家专业的互联网银行解决方案供应商，产品与业务涉及云应用，移动应用，安全软硬件产品及用户体验设计服务等。">
     <meta name="Author" content="CloudCore Frontend Team">
-    <title>云核网络</title>
+    <title>云核网络,专业的互联网银行解决方案供应商</title>
+    <meta name="keywords" content="云核,云核网络,cloudCore,cloudcore,cloudcore.cn,北京云核,互联网金融,安全">
+    <meta http-equiv=Content-Language content=zh-cn>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="assets/css/elegant_font/style.css"/>
+    <link rel="stylesheet" href="assets/css/layout.css?v=0.2">
+    <link rel="stylesheet" href="assets/css/iconfont/css/iconfont.css"/>
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/sprite.css">
     <style>
         .svg-continer > svg {
             stroke-width: 3;
@@ -51,6 +52,7 @@
         #svg-continer-2 {
             transform: translateX(-7%) translateY(-12%);/*去除svg左留白*/
         }
+
     </style>
 </head>
 <body>
@@ -60,6 +62,7 @@
         <span class="sk-inner-circle"></span>
     </div>
 </div>
+<div class="share_div"><img src="assets/images/cc_512.jpg"/></div>
 
 <!-- Header End -->
 <header>
@@ -102,16 +105,16 @@
 
 <!-- HOME -->
 <section id="home" class="parallax-section">
-    <div class="overlay"></div>
+    <div class="overlay" style="background-image: url('assets/images/bg-logo.jpg'); z-index: -200; background-size: cover; background-position: center"></div>
     <div class="container">
         <div class="row">
 
-            <div class="col-md-8 col-sm-12">
+            <div class="col-md-12 col-sm-12">
                 <div class="home-text">
                     <h1>移动 安全 智能 云服务</h1>
                     <p>专业互联网银行解决方案供应商</p>
                     <ul class="section-btn">
-                        <a href="#about" class="smoothScroll"><span data-hover="Discover More">More</span></a>
+                        <a href="about/about.html" class="smoothScroll"><span data-hover="Discover More">More</span></a>
                     </ul>
                 </div>
             </div>
@@ -120,7 +123,13 @@
     </div>
 
     <!-- Video -->
-    <video id="myvideo" muted autoplay loop>
+    <video id="myvideo" muted autoplay loop
+           webkit-playsinline="true"
+           playsinline="true"
+           x-webkit-airplay="allow"
+           x5-video-player-type="h5"
+           x5-video-player-fullscreen="true"
+           style="object-fit:fill">
         <source src="assets/videos/output.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -131,10 +140,10 @@
         <div class="row">
             <!-- Section Header -->
             <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
-                <h2 class="water-mask">Introduce</h2>
+                <h2 class="water-mask row no-gutters">Introduce</h2>
                 <h2><span class="highlight-text">简介</span></h2>
 
-                <p class="col-md-8 col-sm-10 col-xs-12 offset-lg-2 offset-md-1">
+                <p class="col-xs-12">
                     云核网络CloudCore，专业互联网银行解决方案提供商
                 </p>
             </div>
@@ -156,7 +165,7 @@
                         <strong>01</strong>
                         <div class="progress-hover"></div>
                         <p>
-                            云核网络成立于2013年，是一家专业的互联网金融方案提供商，产品与业务涉及云应用、移动应用及安全软硬件产品等，并且提供用户体验服务设计。
+                            北京云核网络技术有限公司（简称：云核网络CloudCore）成立于2013年，是一家专业的互联网银行解决方案供应商，产品与业务涉及云应用，移动应用，安全软硬件产品及用户体验设计服务等。
                         </p>
                     </div>
                 </div>
@@ -167,7 +176,7 @@
                     <strong>02</strong>
                         <div class="progress-hover"></div>
                         <p>
-                            我们与阿里云等机构合作，为银行业提供网银安全管家云服务，提供客户端安全输入系统、核心系统、手机软件令牌、统一认证服务器等系列安全产品。共同打造金融下载服务中心。
+                            公司设立了多个软件开发和交付基地，拥有全国软件服务交付能力。秉承AI+平台的发展战略，致力于帮助中国银行业金融机构从传统型向互联网型转变，成为中国顶级的互联网银行解决方案供应商。
                         </p>
                     </div>
                 </div>
@@ -181,7 +190,7 @@
     <div class="container text-center">
         <!-- Section Header -->
         <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
-            <h2 class="water-mask">Products&Service</h2>
+            <h2 class="water-mask row no-gutters">Products&Service</h2>
             <h2><span class="highlight-text">产品及服务</span></h2>
 
             <p class="col-md-8 col-sm-10 col-xs-12 offset-md-2 offset-sm-1">
@@ -190,26 +199,26 @@
         </div>
         <!-- Section Header End -->
         <div class="row wow fadeInUp animated">
-            <div class="col-md-3 col-sm-3 col-xs-12 text-center">
-                <img class="product-img img wow pulse animated col-md-8" src="assets/images/product_finance.svg" alt="finance">
-                <h4>金融产品</h4>
-                <p class="text-primary"><i>50+</i>金融项目案例</p>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 text-center">
-                <img class="product-img img wow pulse animated col-md-8" src="assets/images/product_security.svg" alt="security">
+            <a class="col-md-3 col-sm-3 col-xs-12 text-center" href="products/products.html?finance">
+                <img class="product-img img col-md-8" src="assets/images/product_finance.svg" alt="finance">
+                <h4>金融业务产品</h4>
+                <p class="text-primary"><i>10+</i>业务产品线</p>
+            </a>
+            <a class="col-md-3 col-sm-3 col-xs-12 text-center" href="products/products.html?parallax" >
+                <img class="product-img img col-md-8" src="assets/images/product_security.svg" alt="security">
                 <h4>安全产品</h4>
-                <p class="text-primary"><i>8</i>种安全软硬件</p>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 text-center">
-                <img class="product-img img wow pulse animated col-md-8" src="assets/images/product_develop.svg" alt="develop">
+                <p class="text-primary"><i>7</i>种安全软硬件</p>
+            </a>
+            <a class="col-md-3 col-sm-3 col-xs-12 text-center" href="products/products.html?Athena">
+                <img class="product-img img col-md-8" src="assets/images/product_develop.svg" alt="develop">
                 <h4>开发平台</h4>
                 <p class="text-primary"><i>3</i>大开发平台</p>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 text-center">
-                <img class="product-img img wow pulse animated col-md-8" src="assets/images/product_design.svg" alt="design">
-                <h4>服务设计</h4>
+            </a>
+            <a class="col-md-3 col-sm-3 col-xs-12 text-center" href="products/products.html?UX">
+                <img class="product-img img col-md-8" src="assets/images/product_design.svg" alt="design">
+                <h4>UX服务</h4>
                 <p class="text-primary"><i>&nbsp;</i>体验创造价值</p>
-            </div>
+            </a>
         </div>
     </div>
 </section>
@@ -219,7 +228,7 @@
     <div class="container">
         <!-- Section Header -->
         <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
-            <h2 class="water-mask">Cases</h2>
+            <h2 class="water-mask row no-gutters">Cases</h2>
             <h2><span class="highlight-text">案例</span></h2>
 
             <p class="col-md-8 col-sm-10 col-xs-12 offset-md-2 offset-sm-1">
@@ -230,7 +239,7 @@
     </div>
 
     <!-- Works -->
-    <div class="portfolio-works wow fadeIn container case" data-wow-duration="2s">
+    <div class="portfolio-works wow fadeIn container case">
 
         <!-- Filter Button Start -->
         <!--<div id="portfolio-filter" class="portfolio-filter-btn-group">-->
@@ -249,12 +258,12 @@
         <div class="portfolio-items">
 
             <!-- Portfolio Items -->
-            <div class="item portfolio-item platform">
+            <a class="item portfolio-item platform" href="cases/casesDet_1.html">
 
-                <img src="assets/images/img-portfolio/portfolio1.jpg" alt="">
+                <img src="assets/images/cases/cover01.jpg" alt="">
                 <div class="portfolio-details-wrapper">
                     <div class="portfolio-details">
-                        <h3 class="animated slideInDown">Athena监控平台系统</h3>
+                        <h3 class="animated slideInDown">晋城银行企业网银</h3>
                         <!--<div class="portfolio-meta-btn">-->
                         <!--<ul class="work-meta">-->
                         <!--<li class="lighbox"><a href="assets/images/img-portfolio/portfolio1.jpg"-->
@@ -265,16 +274,16 @@
                     </div>
                 </div>
 
-            </div>
+            </a>
             <!-- Portfolio Items End -->
 
             <!-- Portfolio Items -->
-            <div class="item portfolio-item ebk">
+            <a class="item portfolio-item ebk" href="cases/casesDet_2.html">
 
-                <img src="assets/images/img-portfolio/portfolio2.jpg" alt="">
+                <img src="assets/images/cases/cover02.png" alt="">
                 <div class="portfolio-details-wrapper">
                     <div class="portfolio-details">
-                        <h3 class="animated slideInDown">晋城银行金管家</h3>
+                        <h3 class="animated slideInDown">晋城银行手机银行</h3>
 
                         <!--<div class="portfolio-meta-btn">-->
                         <!--<ul class="work-meta">-->
@@ -286,16 +295,16 @@
                     </div>
                 </div>
 
-            </div>
+            </a>
             <!-- Portfolio Items End -->
 
             <!-- Portfolio Items -->
-            <div class="item portfolio-item ebk">
+            <a class="item portfolio-item ebk" href="cases/casesDet_3.html">
 
-                <img src="assets/images/img-portfolio/portfolio3.jpg" alt="">
+                <img src="assets/images/cases/cover03.png" alt="">
                 <div class="portfolio-details-wrapper">
                     <div class="portfolio-details">
-                        <h3 class="animated slideInDown">鄞州银行企业网银</h3>
+                        <h3 class="animated slideInDown">晋城银行个人网银</h3>
 
                         <!--<div class="portfolio-meta-btn">-->
                         <!--<ul class="work-meta">-->
@@ -307,36 +316,16 @@
                     </div>
                 </div>
 
-            </div>
+            </a>
             <!-- Portfolio Items End -->
 
             <!-- Portfolio Items -->
-            <div class="item portfolio-item mbk">
+            <a class="item portfolio-item nbk" href="cases/casesDet_5.html">
 
-                <img src="assets/images/img-portfolio/portfolio4.jpg" alt="">
+                <img src="assets/images/cases/cover05.jpg" alt="">
                 <div class="portfolio-details-wrapper">
                     <div class="portfolio-details">
-                        <h3 class="animated slideInDown">鄞州银行手机银行APP</h3>
-
-                        <!--<div class="portfolio-meta-btn">-->
-                        <!--<ul class="work-meta">-->
-                        <!--<li class="lighbox"><a href="assets/images/img-portfolio/portfolio4.jpg"-->
-                        <!--class="featured-work-img"><i class="fa fa-search-plus"></i></a>-->
-                        <!--</li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio Items -->
-
-            <!-- Portfolio Items -->
-            <div class="item portfolio-item nbk">
-
-                <img src="assets/images/img-portfolio/portfolio5.jpg" alt="">
-                <div class="portfolio-details-wrapper">
-                    <div class="portfolio-details">
-                        <h3 class="animated slideInDown">昆山农商行个人网银</h3>
+                        <h3 class="animated slideInDown">鄞州银行企业网银</h3>
                         <!--<div class="portfolio-meta-btn">-->
                         <!--<ul class="work-meta">-->
                         <!--<li class="lighbox"><a href="assets/images/img-portfolio/portfolio5.jpg"-->
@@ -347,16 +336,16 @@
                     </div>
                 </div>
 
-            </div>
+            </a>
             <!-- Portfolio Items End -->
 
             <!-- Portfolio Items -->
-            <div class="item portfolio-item mbk">
+            <a class="item portfolio-item mbk" href="cases/casesDet_6.html">
 
-                <img src="assets/images/img-portfolio/portfolio6.jpg" alt="">
+                <img src="assets/images/cases/cover06.jpg" alt="">
                 <div class="portfolio-details-wrapper">
                     <div class="portfolio-details">
-                        <h3 class="animated slideInDown">昆山农商行手机银行APP</h3>
+                        <h3 class="animated slideInDown">鄞州银行手机银行</h3>
 
                         <!--<div class="portfolio-meta-btn">-->
                         <!--<ul class="work-meta">-->
@@ -368,51 +357,73 @@
                     </div>
                 </div>
 
-            </div>
+            </a>
             <!-- Portfolio Items End -->
 
-            <!--<div class="item portfolio-item mbk">-->
+            <!-- Portfolio Items -->
+            <a class="item portfolio-item mbk" href="cases/casesDet_10.html">
 
-                <!--<img src="assets/images/img-portfolio/portfolio7.jpg" alt="">-->
-                <!--<div class="portfolio-details-wrapper">-->
-                    <!--<div class="portfolio-details">-->
-                        <!--<h3 class="animated slideInDown">海南农信社手机银行APP</h3>-->
-                        <!--&lt;!&ndash;<div class="portfolio-meta-btn">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<ul class="work-meta">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<li class="lighbox"><a href="assets/images/img-portfolio/portfolio7.jpg"&ndash;&gt;-->
-                        <!--&lt;!&ndash;class="featured-work-img"><i class="fa fa-search-plus"></i></a>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</ul>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                    <!--</div>-->
-                <!--</div>-->
+                <img src="assets/images/cases/cover10.jpg" alt="">
+                <div class="portfolio-details-wrapper">
+                    <div class="portfolio-details">
+                        <h3 class="animated slideInDown">网银管家云服务</h3>
 
-            <!--</div>-->
-            <!--&lt;!&ndash; Portfolio Items End &ndash;&gt;-->
+                        <!--<div class="portfolio-meta-btn">-->
+                        <!--<ul class="work-meta">-->
+                        <!--<li class="lighbox"><a href="assets/images/img-portfolio/portfolio4.jpg"-->
+                        <!--class="featured-work-img"><i class="fa fa-search-plus"></i></a>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </a>
+            <!-- Portfolio Items -->
 
-            <!--&lt;!&ndash; Portfolio Items &ndash;&gt;-->
-            <!--<div class="item portfolio-item mbk">-->
+            <!-- Portfolio Items -->
+            <a class="item portfolio-item mbk" href="cases/casesDet_11.html">
 
-                <!--<img src="assets/images/img-portfolio/portfolio8.jpg" alt="">-->
-                <!--<div class="portfolio-details-wrapper">-->
-                    <!--<div class="portfolio-details">-->
-                        <!--<h3 class="animated slideInDown">深圳农商行小微金融APP</h3>-->
-                        <!--&lt;!&ndash;<div class="portfolio-meta-btn">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<ul class="work-meta">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<li class="lighbox"><a href="assets/images/img-portfolio/portfolio8.jpg"&ndash;&gt;-->
-                        <!--&lt;!&ndash;class="featured-work-img"><i class="fa fa-search-plus"></i></a>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</ul>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                    <!--</div>-->
-                <!--</div>-->
+                <img src="assets/images/cases/cover11.jpg" alt="">
+                <div class="portfolio-details-wrapper">
+                    <div class="portfolio-details">
+                        <h3 class="animated slideInDown">昆山农商行手机银行</h3>
 
-            <!--</div>-->
-            <!--&lt;!&ndash; Portfolio Items End &ndash;&gt;-->
+                        <!--<div class="portfolio-meta-btn">-->
+                        <!--<ul class="work-meta">-->
+                        <!--<li class="lighbox"><a href="assets/images/img-portfolio/portfolio6.jpg"-->
+                        <!--class="featured-work-img"><i class="fa fa-search-plus"></i></a>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </div>
 
+            </a>
+            <!-- Portfolio Items End -->
+
+            <!-- Portfolio Items -->
+            <a class="item portfolio-item mbk" href="cases/casesDet_15.html">
+
+                <img src="assets/images/cases/cover15.jpg" alt="">
+                <div class="portfolio-details-wrapper">
+                    <div class="portfolio-details">
+                        <h3 class="animated slideInDown">太仓农商行手机银行</h3>
+
+                        <!--<div class="portfolio-meta-btn">-->
+                        <!--<ul class="work-meta">-->
+                        <!--<li class="lighbox"><a href="assets/images/img-portfolio/portfolio6.jpg"-->
+                        <!--class="featured-work-img"><i class="fa fa-search-plus"></i></a>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+
+            </a>
+            <!-- Portfolio Items End -->
 
         </div>
-        <a class="button_box index_button_box" href="cases/cases.html">查看更多</a>
+        <a style="margin-top: 50px" class="button_box index_button_box" href="cases/cases.html">查看更多</a>
     </div>
     <!-- Works End -->
 </section>
@@ -421,7 +432,7 @@
     <div class="text-center">
         <!-- Section Header -->
         <div class="section-header wow fadeInDown">
-            <h2 class="water-mask">Partners</h2>
+            <h2 class="water-mask row no-gutters">Partners</h2>
             <h2><span class="highlight-text">客户</span></h2>
 
             <p class="col-md-8 col-sm-10 col-xs-12 offset-md-2 offset-sm-1">
@@ -429,8 +440,7 @@
             </p>
         </div>
         <!-- Section Header End -->
-        <div class="partner-box">
-            <!--wow fadeInUp animated-->
+        <div class="partner-box wow fadeInUp animated">
             <div class="partner-slider partner-slider-1">
                 <img src="assets/images/partner/logo.png" alt="">
                 <img src="assets/images/partner/logo.png" alt="">
@@ -455,34 +465,62 @@
     <div class="text-center">
         <!-- Section Header -->
         <div class="section-header wow fadeInDown">
-            <h2 class="water-mask">Download</h2>
+            <h2 class="water-mask row no-gutters">Download</h2>
             <h2><span class="highlight-text">下载</span></h2>
         </div>
         <!-- Section Header End -->
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 text-center">
-                    <div class=" img-box">
-                        <img class="download-img img" src="assets/images/download_manager.png" alt="">
+            <div class="row  wow fadeInUp animated align-items-center">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="row align-items-center no-gutters">
+                        <div class="img-box col-md-6 col-sm-12">
+                            <img class="download-img img" src="assets/images/download_manager.png" alt="">
+                        </div>
+                        <div class="download-desc  col-md-6 col-sm-12">
+                            <div class="row align-items-center">
+                                <p class="col-sm-12">网银管家多行版</p>
+                                <a class="col-sm-12" href="http://ikeeperupdate.oss.aliyuncs.com/App/Common/LastVersion/iHolderSetup.exe">
+                                    <span class="version">v1.0.0</span>
+                                    <span class="download-link">下载</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="">
-                       <p>网银管家多行版v1.0.0</p>
-                       <a class="button_box index_button_box" href="">下载</a>
-                   </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 text-center ">
-                    <div class="img-box">
-                        <img class="download-img img" src="assets/images/download_security.png" alt="">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="row align-items-center no-gutters">
+                        <div class="img-box col-md-6 col-sm-12">
+                            <img class="download-img img" src="assets/images/download_iprotect_win.png" alt="">
+                        </div>
+                        <div class="download-desc  col-md-6 col-sm-12">
+                            <div class="row align-items-center">
+                                <p class="col-sm-12">安全服务 for Windows</p>
+                                <a class="col-sm-12" href="download/iProtectSetup-3.27.0.0.zip">
+                                    <span class="version">v3.27.0.0</span>
+                                    <span>下载</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="">
-                        <p>安全服务控件v3.1.2</p>
-                        <a class="button_box index_button_box" href="">下载</a>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="row align-items-center no-gutters">
+                        <div class="img-box col-md-6 col-sm-12">
+                            <img class="download-img img" src="assets/images/download_iprotect_mac.png" alt="">
+                        </div>
+                        <div class="download-desc  col-md-6 col-sm-12">
+                            <div class="row align-items-center">
+                                <p class="col-sm-12">安全服务 for Mac</p>
+                                <a class="col-sm-12" href="download/iProtectSvc-1.0.0.2.pkg">
+                                    <span class="version">v1.0.0.2</span>
+                                    <span>下载</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 
@@ -496,7 +534,7 @@
             <!--</div>-->
             <!--<div class="col-sm-4 col-12">-->
                 <!--<i class="fa fa-home"></i>-->
-                <!--<p>北京经济技术开发区荣华中路朝林广场B座708室</p>-->
+                <!--<p>北京市海淀区车道沟青东商务区C座5层</p>-->
             <!--</div>-->
             <!--<div class="col-sm-4 col-12">-->
                 <!--<i class="fa fa-envelope-o"></i>-->
@@ -507,9 +545,9 @@
 <!--</section>-->
 
 <!--返回頂部-->
-<div class="goTop">
-    <div class="fs1" aria-hidden="true" data-icon="&#x32;"></div>
-</div>
+<!--<div class="goTop">-->
+    <!--<div class="fs1" aria-hidden="true" data-icon="&#x32;"></div>-->
+<!--</div>-->
 
 <footer>
     <div class="container">
@@ -520,14 +558,14 @@
             </div>
             <div class="col-md-6 col-ms-6 col-xs-12">
                 <div class="row contact">
-                    <div><i class="fa fa-phone"></i></div>
-                    <div class="active"><i class="fa fa-envelope-o"></i></div>
-                    <div class="fs1" aria-hidden="true" data-icon="&#xe01d;"></div>
+                    <div class="icon iconfont icon-phone"></div>
+                    <div class="icon iconfont icon-mail"></div>
+                    <div class="active icon iconfont icon-location"></div>
                 </div>
                 <div class="content">
                     <p class="row">010-87220477</p>
-                    <p class="row active">csc@cloudcore.cn</p>
-                    <p class="row">北京经济技术开发区荣华中路朝林广场B座708室</p>
+                    <p class="row">csc@cloudcore.cn</p>
+                    <p class="row active">北京市海淀区车道沟青东商务区C座5层</p>
                 </div>
             </div>
         </div>
@@ -540,8 +578,9 @@
 <script src="assets/js/jquery-2.1.3.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="news/imagesloaded.pkgd.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/vivus.min.js"></script>
-<script src="index.js"></script>
+<script src="index.js?v=0.3"></script>
 </body>
 </html>

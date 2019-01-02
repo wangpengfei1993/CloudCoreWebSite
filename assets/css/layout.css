@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 微软雅黑,sans-serif;
     font-size: 14px;
     font-weight: 400;
     -webkit-box-sizing: border-box;
@@ -45,7 +45,7 @@ b, strong{
     color: #fff;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Asap', sans-serif;
+    font-family: 'Asap', 微软雅黑,sans-serif;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 15px;
@@ -195,12 +195,21 @@ a:active{
     padding: 10px 0 100px 0;
     color: #fff;
 }
-.about-sec .customized-text:hover,.info-section .row .text-center:hover{
-    background: #131313;
-}
+
 .info-section{
     background: #28292e;
     /* padding: 80px 0; */
+}
+.info-section .row .text-center img{
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
+    margin-bottom: 20px;
+}
+.info-section .row .text-center:hover img{
+    transform: scale(1.2);
 }
 section#services{
     background: #28292e;
@@ -219,7 +228,7 @@ section#info p.text-primary{
 
 section#info p.text-primary i{
     font-size: 24px;
-    color: #3AD29F;
+    color: #61BC46;
     font-weight: bold;
     font-style: normal;
 }
@@ -243,19 +252,17 @@ section#info p.text-primary i{
     width: 30px;
 }
 
+/*防动画闪烁*/
+.hidddden{
+    opacity: 0;
+}
+
 section#partner.partner-section{
     padding-top: 60px;
-    background: #fff;
 }
-.partner-section .section-header p{
-    color: rgba(0,0,0,0.85);
-}
+
 .partner-section .section-header h2{
-    color: rgba(0,0,0,0.85);
     font-weight: 700;
-}
-.partner-section .section-header h2.water-mask{
-    color: rgba(0,0,0,0.10);
 }
 .partner-box{
     display: block;
@@ -274,14 +281,29 @@ section#partner.partner-section{
 
 .partner-box .partner-slider img{
     float: left;
+    width: 3013px;
 }
 
-.partner-box .partner-slider img:first-child{
-    padding-right: 100px;
+.partner-box .partner-slider-1{
+    width: 6026px;
+    -webkit-animation: 40s partner-slider-1 linear infinite normal;
+    animation: 40s partner-slider-1 linear infinite normal;
+    position: relative;
+}
+
+@keyframes partner-slider-1{
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-3013px, 0, 0);
+        transform: translate3d(-3013px, 0, 0);
+    }
 }
 
 .download-section {
-    padding:30px 0;
+    padding: 30px 0 100px 0;
 }
 
 .download-section  .container  .text-center{
@@ -289,9 +311,20 @@ section#partner.partner-section{
     justify-content: center;
 }
 
-.download-section p{
+.download-desc p{
+    white-space: nowrap;
+    overflow: hidden;
     font-size:18px;
-    font-weight: 200;
+    /*font-weight: 200;*/
+}
+
+.download-desc a{
+    white-space: nowrap;
+    /*font-weight: 200;*/
+}
+
+.download-desc .version{
+    color: #fff;
 }
 
 .download-img{
@@ -299,8 +332,9 @@ section#partner.partner-section{
 }
 
 .download-section .img-box{
-    margin-right:20px;
+    /* margin-right:20px; */
 }
+
 .goTop{
     position: fixed;
     bottom:100px;
@@ -313,80 +347,6 @@ section#partner.partner-section{
     font-size: 30px;
     display: none;
 }
-@keyframes partner-slider-1{
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(-3096px, 0, 0);
-        transform: translate3d(-3096px, 0, 0);
-    }
-}
-
-@keyframes partner-slider-2{
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(-3096px, 0, 0);
-        transform: translate3d(-3096px, 0, 0);
-    }
-}
-
-@keyframes partner-slider-3{
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(-3096px, 0, 0);
-        transform: translate3d(-3096px, 0, 0);
-    }
-}
-
-@keyframes partner-slider-4{
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(-3096px, 0, 0);
-        transform: translate3d(-3096px, 0, 0);
-    }
-}
-/* x2 + 100 */
-.partner-box .partner-slider-1{
-    /*width: 2896px;*/
-    width: 6292px;
-    -webkit-animation: 40s partner-slider-1 linear infinite normal;
-    animation: 40s partner-slider-1 linear infinite normal;
-    position: relative;
-}
-.partner-box .partner-slider-2{
-    /*width: 3048px;*/
-    width: 6292px;
-    -webkit-animation: 40s partner-slider-2 linear infinite normal;
-    animation: 40s partner-slider-2 linear infinite normal;
-    position: relative;
-}
-.partner-box .partner-slider-3{
-    /*width: 2968px;*/
-    width: 6292px;
-    -webkit-animation: 40s partner-slider-3 linear infinite normal;
-    animation: 40s partner-slider-3 linear infinite normal;
-    position: relative;
-}
-.partner-box .partner-slider-4{
-    /*width: 3096px;*/
-    width: 6292px;
-    -webkit-animation: 40s partner-slider-4 linear infinite normal;
-    animation: 40s partner-slider-4 linear infinite normal;
-    position: relative;
-}
-
-
 
 .blurb-icon-left-square .icon{
     width: 70px;
@@ -468,6 +428,7 @@ section#partner.partner-section{
 }
 
 .section-header{
+    position: relative;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -494,10 +455,15 @@ section#partner.partner-section{
     font-size: 96px;
     color: rgba(255,255,255,0.10);
     position: absolute;
+    left: 0;
+    top:0;
     width: 100%;
     text-align: center;
     padding: 0;
-    margin: 0;
+    -ms-flex-align:center;
+    align-items:center;
+    -ms-flex-pack:center;
+    justify-content:center;
 }
 
 .section-header h1 span{
@@ -566,6 +532,7 @@ header.page-header .main-menu{
 .main-menu .navbar-nav{
     float: right;
     padding: 20px 0;
+    /* overflow: hidden; */
 }
 .main-menu .navbar-nav li{
     display:inline;
@@ -590,7 +557,7 @@ header.page-header .main-menu{
 }
 
 .navbar-expand-md .navbar-nav .nav-link{
-    padding: 15px 36px;
+    padding: 15px 32px;
 }
 
 .main-menu .navbar-nav li a:hover,
@@ -795,9 +762,10 @@ header.page-header .main-menu.minified{
 
 .portfolio-items .portfolio-item{
     width: 50%;
-    height: 280px;
+    /*height: 280px;*/
     position: relative;
     overflow: hidden;
+    min-height:150px;
 }
 
 .portfolio-items .portfolio-item img{
@@ -827,7 +795,7 @@ header.page-header .main-menu.minified{
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.60);
-    display: table;
+    /*display: table;*/
     opacity: 0;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -841,9 +809,10 @@ header.page-header .main-menu.minified{
 }
 
 .portfolio-item .portfolio-details{
-    display: table-cell;
-    padding: 50px 0;
+    /*display: table-cell;*/
+    /*padding: 50px 0;*/
     vertical-align: middle;
+    height:100%;
 }
 
 .portfolio-item .portfolio-details .portfolio-meta-btn{
@@ -909,6 +878,8 @@ header.page-header .main-menu.minified{
     /*-ms-transition: all .3s;*/
     /*-o-transition: all .3s;*/
     /*transition: all .3s;*/
+    position: relative;
+    top: 45%;
     display: none;
 }
 
@@ -955,6 +926,9 @@ header.page-header .main-menu.minified{
 .customized-text p{
     margin-bottom: 20px;
     color: #ffffff;
+    max-width: 164px;
+    /* text-align: center; */
+    /* margin: auto; */
 }
 
 .customized-text h3{
@@ -1069,6 +1043,10 @@ header.page-header .main-menu.minified{
     color: rgba(250,250,250,0.7);
 }
 
+#home .smoothScroll{
+    color:#61BC46;
+}
+
 #home .overlay {
     position: absolute;
     top: 0;
@@ -1101,6 +1079,7 @@ header.page-header .main-menu.minified{
 footer{
     background-color: #131313;
     overflow: hidden;
+    position: relative;
 }
 
 footer .footer-containertent{
@@ -1116,6 +1095,10 @@ footer p{
     margin-bottom: 0;
     font-size: 14px;
     color: rgba(255,255,255,0.81);
+}
+
+.footer > div > p:first-child{
+     margin-top: 7px;
 }
 
 footer ul {
@@ -1202,8 +1185,11 @@ footer ul li a i{
     justify-content: flex-end;
 }
 .footer > div:last-child > div div{
-    margin:0 15px;
+    margin:2px 15px 0;
     color:#fff;
+}
+.footer > div:last-child > div div:nth-child(2){
+    margin-top:0;
 }
 .footer > div:last-child > div > div:not(.active){
     color: rgba(255,255,255,0.6);
@@ -1230,12 +1216,31 @@ a.button_box{
     line-height:46px;
     margin-top:20px;
 }
+
+.share_div{width:0;height:0;overflow:hidden;}/*分享logo*/
+
 @media (min-width: 1200px){
     .case {
         max-width: 1000px;
     }
 }
+@media (min-width: 768px){
+    .download-desc>.row{
+        text-align: left;
+    }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    #home h1 {
+        font-size: 50px;
+    }
+
+    #home p {
+        font-size: 50px;
+    }
+
+    #home .smoothScroll{
+    }
 
     .main-menu.minified {
         background-color: #28292e;
@@ -1267,7 +1272,7 @@ a.button_box{
 
     .portfolio-items .portfolio-item {
         width:50%;
-        height: 280px;
+        /*height: 280px;*/
         overflow: hidden;
         position: relative;
     }
@@ -1275,6 +1280,28 @@ a.button_box{
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .download-desc p{
+        font-size: 12px;
+    }
+    .download-desc  a span{
+        font-size: 12px;
+    }
+
+    /*防止导航条换行*/
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding: 15px 22px;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home p {
+        font-size: 40px;
+    }
+
+    #home .smoothScroll{
+    }
 
     .main-menu.minified {
         background-color: #28292e;
@@ -1321,7 +1348,7 @@ a.button_box{
 
     .portfolio-items .portfolio-item {
         width:50%;
-        height: 280px;
+        /*height: 280px;*/
         overflow: hidden;
         position: relative;
     }
@@ -1332,6 +1359,66 @@ a.button_box{
 
 
 @media only screen and (max-width: 767px) {
+    .download-section p{
+        font-size:14px;
+    }
+    .download-section  a span{
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    section#info p.text-primary i{
+        font-size: px;
+    }
+
+    .section-header h2{
+        font-size: 20px;
+        padding-top: 26px;
+    }
+
+    .section-header p{
+        font-size: 12px;
+    }
+
+    .customized-text p{
+        max-width: 767px;
+    }
+
+    #home h1 {
+        font-size: 24px;
+    }
+
+    #home p {
+        font-size: 24px;
+    }
+
+    #home .smoothScroll{
+    }
+
+    .partner-box .partner-slider img{
+        width: 2000px;
+    }
+
+    .partner-box .partner-slider-1{
+        width: 4000px;
+    }
+    .customized-text p {
+        max-width: 100%;
+    }
+    @keyframes partner-slider-1{
+        100% {
+            -webkit-transform: translate3d(-2000px, 0, 0);
+            transform: translate3d(-2000px, 0, 0);
+        }
+    }
+
     .navbar-brand {
         float: none !important;
         width: 120px;
@@ -1343,6 +1430,7 @@ a.button_box{
     .section-header {
         margin-bottom: 60px;
         text-align: center;
+        overflow: hidden;
     }
 
     .navbar-toggle {
@@ -1458,10 +1546,14 @@ a.button_box{
     }
 
     .portfolio-items .portfolio-item {
-        height: 280px;
+        /*height: 280px;*/
         overflow: hidden;
         position: relative;
         width: 100%;
+    }
+    .portfolio-item .portfolio-details h3{
+        font-size:20px;
+        top:40%;
     }
 
     .service-wrapper > div {
@@ -1486,13 +1578,13 @@ a.button_box{
 
     .download-section .img-box {
         text-align: center;
-        margin: 20px;
+        margin: auto;
     }
     .download-section .img-box + div {
         margin: 20px 0;
     }
     .section-header h2.water-mask{
-        font-size: 2.8em;
+        font-size: 2.5em;
     }
     .goTop {
         bottom: 180px;
@@ -1501,6 +1593,26 @@ a.button_box{
 
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .section-header h2{
+        font-size: 20px;
+        padding-top: 26px;
+    }
+
+    .section-header p{
+        font-size: 12px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    #home p {
+        font-size: 30px;
+    }
+
+    #home .smoothScroll{
+    }
 
     .portfolio-items .portfolio-item {
         width: 50%;

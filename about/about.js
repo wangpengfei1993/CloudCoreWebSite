@@ -39,6 +39,7 @@ jQuery(document).ready(function() {
             callback:     function(box) {
                 // the callback is fired every time an animation is started
                 // the argument that is passed in is the DOM node being animated
+                $('.hidddden').removeClass('hidddden');
             }
         }
     );
@@ -86,5 +87,11 @@ jQuery(document).ready(function() {
     //     $optionSet.find('.selected').removeClass('selected');
     //     $this.addClass('selected');
     // });
-
+    /*--------------底部切换-------------*/
+    $('.contact div').mouseover(function(){
+        $('.contact div').removeClass('active');
+        $(this).addClass('active');
+        $('footer .content p').removeClass('active');
+        $("footer .content p:eq("+ $(this).index() +")").addClass('active');
+    });
 });
